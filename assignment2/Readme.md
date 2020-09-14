@@ -12,13 +12,15 @@
     Adam:Combine the advangetage of Momentum and RMSProp  
     We have showed the results as following:
     ![](https://github.com/fanshuhuangjia/cs231n/blob/master/assignment2/pic2/RMS_Adam.png)  
+    As shown in the figure above,we got better lost and accuracy when we use RMSProp and Adam.Because of combining the advangetage of Momentum and RMSProp,Adam got the best performance in our experiments.
     
   * Batch Normalization
     * Datasets:CIFAR10 
-    * Experiment process: We strategy is to change the architecture of the network to make it easier to train,we will use Batch Normalization and Layer Normalization.
+    * Experiment process: We strategy is to change the architecture of the network to make it easier to train,we will use Batch Normalization and Layer Normalization.  
+                          ![](https://github.com/fanshuhuangjia/cs231n/blob/master/assignment2/pic2/BN.png) 
     * Experiment result:   
-    ![](https://github.com/fanshuhuangjia/cs231n/blob/master/assignment2/pic2/BatchNormalization_result.png)  
-    ![](https://github.com/fanshuhuangjia/cs231n/blob/master/assignment2/pic2/BatchNormalization_result.png)  
+    ![](https://github.com/fanshuhuangjia/cs231n/blob/master/assignment2/pic2/BatchNormalization_result.png) 
+    ![](https://github.com/fanshuhuangjia/cs231n/blob/master/assignment2/pic2/Layer%20Normalization_result.png)
     As shown in the figure above,we can find that we can get better accuracy using BN in different batch size. 
 
  
@@ -34,6 +36,6 @@
     * Datasets:CIFAR10 
     * Experiment process:  We build a three-layer convolutional network with the following architecture:  
                            conv - relu - 2x2 max pool - affine - relu - affine - softmax
-    * Experiment result:  At last we got full data training accuracy 0.38 and full data validation accuracy: 0.483 in the CIFAR10   
+    * Experiment result:  At last we got full data training accuracy 0.49 and full data validation accuracy: 0.483 in the CIFAR10   
                           We visualize the first-layer convolutional filters from the trained network.  
                           ![](https://github.com/fanshuhuangjia/cs231n/blob/master/assignment2/pic2/CNN_result.png) 
