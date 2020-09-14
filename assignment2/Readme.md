@@ -24,13 +24,16 @@
  
  * Dropout
     * Datasets:CIFAR10 
-    * Experiment process: 
-    * Experiment result:   
+    * Experiment process: Dropout is a technique for regularizing neural networks by randomly setting some output activations to zero during the forward pass.  
+                          ![](https://github.com/fanshuhuangjia/cs231n/blob/master/assignment2/pic2/dropout.png)  
+                          As an experiment, we will train a pair of two-layer networks on 500 training examples: one will use no dropout, and one will use a keep probability of 0.25. We will then visualize the training and validation accuracies of the two networks over time.  
+    * Experiment result:   ![](https://github.com/fanshuhuangjia/cs231n/blob/master/assignment2/pic2/dropout_result.png)  
+                           As shown in the figure above,we can find that using dropout will lower train accuracy,but improve val accuracy. 
 
  * Convolutional Networks
     * Datasets:CIFAR10 
-    * Experiment process: We develop a neural network with fully-connected layers to perform classification,and we tune our hyperparameters.
-    * Experiment result: Best Validation accuracy: 0.509000 h_size: 125 learning rate: 0.001100 reg: 0.750000  
-      we visualize the learned weights for each class  
-      ![](https://github.com/fanshuhuangjia/cs231n/blob/master/PIC/tow_layer_net_learned%20weights.png)
- * PyTorch on CIFAR-10
+    * Experiment process:  We build a three-layer convolutional network with the following architecture:  
+                           conv - relu - 2x2 max pool - affine - relu - affine - softmax
+    * Experiment result:  At last we got full data training accuracy 0.38 and full data validation accuracy: 0.483 in the CIFAR10   
+                          We visualize the first-layer convolutional filters from the trained network.  
+                          ![](https://github.com/fanshuhuangjia/cs231n/blob/master/assignment2/pic2/CNN_result.png) 
