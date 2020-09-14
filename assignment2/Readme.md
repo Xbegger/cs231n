@@ -21,7 +21,7 @@
     * Experiment result:   
     ![](https://github.com/fanshuhuangjia/cs231n/blob/master/assignment2/pic2/BatchNormalization_result.png) 
     ![](https://github.com/fanshuhuangjia/cs231n/blob/master/assignment2/pic2/Layer%20Normalization_result.png)
-    As shown in the figure above,we can find that we can get better accuracy using BN in different batch size. 
+    As shown in the figure above,we can find that we can get better accuracy using BN and LN in different batch size. 
 
  
  * Dropout
