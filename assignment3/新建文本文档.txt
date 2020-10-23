@@ -1,0 +1,48 @@
+CV：
+ICCV 
+CVPR 
+NIPS
+ICML 
+ECCV（B）
+
+WR-20200914-0920-zhangchenhan
+Dear Dr.Li,
+    This email is about my summary of last week,and plan of this week.
+
+Summary of last week:
+1.Learning Deep Learning chapter 3
+
+Plan of this week:
+1. read paper video prediction via example guidance
+
+2.prepare for survey about video prediction
+
+
+tied weight
+untied weight
+
+ImportError: /home/zch/anaconda3/envs/VPEG/lib/python3.7/site-packages/scipy/_lib/_uarray/_uarray.cpython-37m-x86_64-linux-gnu.so: symbol _ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE9_M_assignERKS4_, version GLIBCXX_3.4.21 not defined in file libstdc++.so.6 with link time reference
+
+2020.10.05 16：19
+
+
+Saved video: 12605
+Traceback (most recent call last):
+  File "/home/zch/VPEG/pycharm-VPEG/VPEG/VPEG-master/RobotPush/extract.py", line 117, in <module>
+    main()
+  File "/home/zch/VPEG/pycharm-VPEG/VPEG/VPEG-master/RobotPush/extract.py", line 110, in main
+    extract_data(data_dir, output_dir, frame_rate)
+  File "/home/zch/VPEG/pycharm-VPEG/VPEG/VPEG-master/RobotPush/extract.py", line 77, in extract_data
+    _, k, actions, endeff_pos, aux1_frames, main_frames = next(seq_generator)
+  File "/home/zch/VPEG/pycharm-VPEG/VPEG/VPEG-master/RobotPush/extract.py", line 20, in get_next_video_data
+    for serialized_example in tf.python_io.tf_record_iterator(f):
+  File "/home/zch/anaconda3/envs/VPEG/lib/python3.7/site-packages/tensorflow_core/python/lib/io/tf_record.py", line 181, in tf_record_iterator
+    reader.GetNext()
+  File "/home/zch/anaconda3/envs/VPEG/lib/python3.7/site-packages/tensorflow_core/python/pywrap_tensorflow_internal.py", line 1034, in GetNext
+    return _pywrap_tensorflow_internal.PyRecordReader_GetNext(self)
+tensorflow.python.framework.errors_impl.DataLossError: corrupted record at 45979832
+
+Process finished with exit code 1
+
+/home/zch/VPEG/pycharm-VPEG/VPEG/VPEG-master/RobotPush/testdata/traj_7775_to_8030.tfrecords
+
