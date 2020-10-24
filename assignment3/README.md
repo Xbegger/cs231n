@@ -40,7 +40,7 @@
     * Qualitative Results:  
                            Saliency Maps:  
                            ![](https://github.com/fanshuhuangjia/cs231n/blob/master/assignment3/pic/NV_Saliency_maps.png)  
-                           Fooling Images:
+                           Fooling Images:  
                            ![](https://github.com/fanshuhuangjia/cs231n/blob/master/assignment3/pic/NV_Fooling_images.png)  
                            Class Visualization:  
                            ![](https://github.com/fanshuhuangjia/cs231n/blob/master/assignment3/pic/NV_Class_visualization.png) 
@@ -66,12 +66,9 @@
       epoch: 10  
       train size: 50000  
       val size: 5000  
-    * Qualitative Results:  
-                           Vanilla GAN:  
+    * Qualitative Results:    
                            ![](https://github.com/fanshuhuangjia/cs231n/blob/master/assignment3/pic/Vanilla_GAN.png)  
-                           LS-GAN:
-                           ![](https://github.com/fanshuhuangjia/cs231n/blob/master/assignment3/pic/LS_GAN.png)  
-                           DC-GAN:  
+                           ![](https://github.com/fanshuhuangjia/cs231n/blob/master/assignment3/pic/LS_GAN.png)   
                            ![](https://github.com/fanshuhuangjia/cs231n/blob/master/assignment3/pic/DC_GAN.png) 
     * Further Discussion: The Vanilla GAN use Fully connected layer in the Discriminator and Generator,but the result was not good. The LS-GAN proposed a newer, more stable alernative to the original GAN loss function,and got a bit improvement.The DC-GAN used convolutional network instead of fully connected network and got a better results.
 
